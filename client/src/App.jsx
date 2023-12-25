@@ -1,8 +1,26 @@
 
-import React from 'react'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import Recipies from './pages/Recipies'
+import SignUp from './pages/SignUp'
+import SignIn from './pages/SignIn'
+import About from './pages/About'
+import Dashboard from './pages/Dashboard'
+import Home from './pages/Home'
+import Profile from './pages/Profile'
+
 
 export default function App() {
   return (
-    <div>App</div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/recipies" element={<Recipies />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
