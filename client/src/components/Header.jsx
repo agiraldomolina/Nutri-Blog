@@ -12,7 +12,7 @@ export default function Header() {
         <Link to="/"
             className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
             <span
-                className='px-2 py-1 bg-gradient-to-r from-lime-600 via-lime-400 to-teal-300 rounded-lg text-white'
+                className='px-2 py-1 bg-gradient-to-r from-green-600 via-green-400 to-blue-800 rounded-lg text-white'
             >  Alba's  </span>
             Blog
         </Link>
@@ -32,7 +32,7 @@ export default function Header() {
                 <FaMoon/>
             </Button>
             <Link to='/sig-in'>
-                <Button gradientDuoTone='tealToLime'>
+                <Button gradientDuoTone='greenToBlue' outline>
                     Sign In
                 </Button>
             </Link>
